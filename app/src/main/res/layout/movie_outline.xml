@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBackdrop"
+        android:text="Rings"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/ivVoteStart"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/ivBackdrop"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/tvTitle"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/love" />
+
+    <TextView
+        android:id="@+id/tvVoteAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBackdrop"
+        android:layout_toLeftOf="@id/ivVoteStart"
+        android:layout_alignBottom="@id/tvTitle"
+        android:text="5.2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:text="Horror"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/ivCalnedar"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvGenre"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toLeftOf="@id/ivCalnedar"
+        android:layout_alignBottom="@+id/tvGenre"
+        android:text="02/03/2017"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom"/>
+</merge>

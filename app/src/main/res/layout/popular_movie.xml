@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popular_movie_in_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/ivBackdrop"
+        android:layout_width="151dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:id="@+id/movieOutline"
+        android:layout_width="wrap_content"
+        android:layout_height="134dp"
+        android:layout_below="@+id/ivBackdrop"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="-134dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="151dp">
+
+        <include
+            layout="@layout/movie_outline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

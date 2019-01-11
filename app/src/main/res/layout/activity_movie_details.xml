@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="#212121"
+    >
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPoster"
+        android:text="movie detail"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tvReleaseDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:text="Release Date: "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/tvReleaseDateTitle"
+        android:layout_alignBottom="@+id/tvReleaseDateTitle"
+        android:text="release_date"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReleaseDate"
+        android:text="overview"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:singleLine="false"
+        android:lines="5"
+        />
+    <RatingBar
+        android:id="@+id/rbVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOverview"
+        />
+
+</RelativeLayout>
